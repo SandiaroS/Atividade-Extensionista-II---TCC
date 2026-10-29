@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenário & Legislação | Saúde Mental Corporativa</title>
+
+    <!-- Google tag (gtag.js) Coleta de Acessos -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4YK1B785G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B4YK1B785G');
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(rgba(247, 250, 252, 0.85), rgba(247, 250, 252, 0.95)),
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80') center center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #667eea;
+            border-bottom: 2px solid #0b31da;
+            padding: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo { color: #ffffff; font-size: 22px; font-weight: 700; text-decoration: none; }
+        .nav-tabs { display: flex; gap: 8px; list-style: none; flex-wrap: wrap; }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover { background: rgba(255, 255, 255, 0.3); transform: translateY(-2px); }
+        .nav-btn.active { background: #ffffff; color: #667eea; border-color: #ffffff; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; width: 100%; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.9) 100%),
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80') center/cover;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 15px; }
+        .hero p { font-size: 18px; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+
+        .main-content { padding: 50px 0; flex: 1; }
+
+        .target-banner {
+            background: #ffffff;
+            border-left: 5px solid #764ba2;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .articles { display: grid; grid-template-columns: 1fr; gap: 30px; }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+        }
+
+        .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15); }
+
+        .article-header {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .article-date {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .article-header h2 { font-size: 22px; color: #2d3748; }
+        .article-body { padding: 25px; }
+        .article-card p { color: #4a5568; line-height: 1.8; margin-bottom: 16px; }
+
+        .read-more {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover { color: #764ba2; transform: translateX(4px); }
+
+        footer {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            color: #ffffff;
+            padding: 40px 0;
+            margin-top: auto;
+            text-align: center;
+        }
+
+        footer p { margin: 8px 0; font-size: 14px; opacity: 0.9; }
+
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; }
+            .hero h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">🏥 Saúde Mental Corporativa</a>
+            <nav>
+                <ul class="nav-tabs">
+                    <li><a href="index.html" class="nav-btn active">Cenário & Legislação</a></li>
+                    <li><a href="kit.html" class="nav-btn">Kit Prático</a></li>
+                    <li><a href="apoio.html" class="nav-btn">Divulgar & Apoio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Saúde Mental no Ambiente de Trabalho</h1>
+            <p>Estratégias práticas, dados consolidados e conscientização para profissionais de escritório e atendimento ao cliente.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="main-content">
+            
+            <div class="target-banner">
+                <span style="font-size: 30px;">💡</span>
+                <div>
+                    <strong>Foco no Profissional de Escritório e Atendimento:</strong>
+                    <p>Cobrança por metas, longas horas na mesma posição e alta demanda interpessoal tornaram os transtornos psíquicos a principal causa de afastamentos corporativos. Veja os dados recentes:</p>
+                </div>
+            </div>
+
+            <section class="articles">
+                <!-- Artigo 1 -->
+                <article class="article-card">
+                    <div class="article-header">
+                        <span class="article-date">25 de maio de 2026</span>
+                        <h2>NR-1: Nova regra sobre saúde mental no trabalho entra em vigor</h2>
+                    </div>
+                    <div class="article-body">
+                        <p>A atualização da Norma Regulamentadora nº 1 (NR-1) tornou explícito que os riscos psicossociais — como metas abusivas, jornadas exaustivas e assédio — passam a integrar o gerenciamento de riscos obrigatório das empresas.</p>
+                        <a href="https://g1.globo.com/trabalho-e-carreira/noticia/2026/05/25/nr-1-regra-entra-em-vigor-veja-o-que-muda.ghtml" target="_blank" class="read-more">Leia a notícia na íntegra →</a>
+                    </div>
+                </article>
+
+                <!-- Artigo 2 -->
+                <article class="article-card">
+                    <div class="article-header">
+                        <span class="article-date">28 de janeiro de 2026</span>
+                        <h2>Previdência Social concede 546 mil benefícios por transtornos mentais em 2025</h2>
+                    </div>
+                    <div class="article-body">
+                        <p>Com alta de 15,66% em relação a 2024, ansiedade e depressão lideram afastamentos. Mulheres representam 63,4% dos casos, evidenciando o impacto da sobrecarga de tarefas em funções administrativas e de atendimento ao público.</p>
+                        <a href="https://www.gov.br/previdencia/pt-br/noticias/2026/janeiro/previdencia-social-concede-546-254-beneficios-por-incapacidade-temporaria-por-transtornos-mentais-e-comportamentais" target="_blank" class="read-more">Leia os dados completos do INSS →</a>
+                    </div>
+                </article>
+
+                <!-- Artigo 3 -->
+                <article class="article-card">
+                    <div class="article-header">
+                        <span class="article-date">9 de junho de 2026</span>
+                        <h2>Saúde Mental custa US$ 5 trilhões por ano à economia global</h2>
+                    </div>
+                    <div class="article-body">
+                        <p>Estudo da Sodexo e Global Brain Health Initiative revela que desengajamento e perda de produtividade por Burnout custam trilhões. Investir em qualidade de vida no escritório gera retorno financeiro direto.</p>
+                        <a href="https://g1.globo.com/trabalho-e-carreira/noticia/2026/06/09/saude-mental-ja-custa-us-5-trilhoes-por-ano-e-valor-pode-triplicar-ate-2030-diz-estudo.ghtml" target="_blank" class="read-more">Ver análise econômica completa →</a>
+                    </div>
+                </article>
+
+                <!-- Artigo 4 -->
+                <article class="article-card">
+                    <div class="article-header">
+                        <span class="article-date">13 de janeiro de 2026</span>
+                        <h2>Ministério da Saúde inicia Pesquisa Nacional de Saúde Mental</h2>
+                    </div>
+                    <div class="article-body">
+                        <p>O primeiro mapeamento populacional sobre saúde mental no Brasil mapeará a prevalência de transtornos como ansiedade e depressão na população trabalhadora.</p>
+                        <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2026/janeiro/ministerio-da-saude-inicia-pesquisa-nacional-de-saude-mental-para-mapear-a-realidade-da-populacao-adulta" target="_blank" class="read-more">Saiba mais sobre o estudo →</a>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Blog de Saúde Mental Corporativa. Desenvolvido por Sandiaro.</p>
+            <p>Informações para fins educacionais. Consulte sempre um profissional de saúde.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
